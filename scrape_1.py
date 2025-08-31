@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-st.title("Link Detective Domain Info 🕵️‍♂️")
+st.title("Guest Post price checker 🕵️‍♂️")
 
 # ---- User input ----
 domain_input = st.text_input("Enter domain(s) ")
@@ -77,3 +77,4 @@ if st.button("Fetch Data") and domain_input:
         st.dataframe(df)
     else:
         st.info("No data found for the provided domain(s).")
+
